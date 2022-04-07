@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Kaverilista</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="container">
+	<div class="col-md-4">
+		<h1>Kavereiden osoitelista</h1>
+	</div>
+	<div class="col-md-4">
+		<h3 th:inline="text">Tervetuloa [[${#httpServletRequest.remoteUser}]]</h3>
+	</div>
+	<div class="col-md-4" style="padding:20px 0">
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" class="btn btn-sm btn-danger"/>
+		</form>
+	</div>
+    <table class="table table-striped">
+		<tr>
+		    <th>Nimi</th>
+		    <th>Osavaltio</th>
+		    <th>Valtio</th>
+		    <th> </th>
+		</tr>  
+    	<tr th:each = "kaveri : ${kaverit}">
+    		<td th:text="${kaveri.nimi} + ' ' + ${kaveri.katuosoite}"></td>
+    		<td th:text="${kaveri.osavaltio}"></td>
+    		<td th:text="${kaveri.valtio}"></td> 		
+ 			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${kaveri.id})}" class="btn btn-xs btn-danger">Delete</a></td>    		
+    	</tr>
+     </table>
+     <p></p>
+	 <a href="/lisaa" class="btn btn-primary">Lisää kaveri</a> 
+</div>	    	
+</body>
+</html>

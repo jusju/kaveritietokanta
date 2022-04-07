@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kaveritietokanta talleta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+</head>
+<body>
+	<div class="container">
+		<h2>Lisää kaveri</h2>
+		<div class="col-md-4">
+		<form th:object="${kaveri}" th:action="@{talleta}" action="#" method="post">
+		  	<label for="fname">Nimi</label>
+			<input type="text" id="nimi" th:field="*{nimi}" class="form-control"/>
+			<div style="clear: both; display: block; height: 10px;"></div>
+		  	<label for="lname">Katuosoite</label>
+			<input type="text" id="katuosoite" th:field="*{katuosoite}" class="form-control"/>
+			<div style="clear: both; display: block; height: 10px;"></div>
+		  	<label for="valtio">Valtio</label>
+			<input type="text" th:field="*{valtio}" class="form-control"/>
+
+			
+			<div style="clear: both; display: block; height: 10px;"></div>
+			<input type="submit" class="btn btn-primary" value="Talleta"></input>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
