@@ -14,16 +14,23 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kaveritietokanta</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
+		<tomcat.version>9.0.62</tomcat.version>
 	</properties>
 	<dependencies>
-	<!-- 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
-	 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
