@@ -40,13 +40,18 @@ public class KaveritietokantaApplication {
 			Kaveri kaveri5 = new Kaveri("Dennis Goodrich", "309 Wellons Drive", "50014", "Ames", "IA", "USA");	
 			Kaveri kaveri6 = new Kaveri("Elena Cooke", "110 Richey Road", "29669", "USA", "SC", "USA");	
 			Kaveri kaveri7 = new Kaveri("Heikki ja Maj Salminen", "110 Richey Road", "29669", "USA", "SC", "USA");
-			Kaveri kaveri8 = new Kaveri("Jane and Bill Helling", "301 N. Grace Ave.", "29669", "USA", "SC", "USA");
-			Kaveri kaveri9 = new Kaveri("Elena Cooke", "110 Richey Road", "29669", "USA", "SC", "USA");
-			Kaveri kaveri10 = new Kaveri("Elena Cooke", "110 Richey Road", "29669", "USA", "SC", "USA");
-			Kaveri kaveri11 = new Kaveri("Elena Cooke", "110 Richey Road", "29669", "USA", "SC", "USA");
-			Kaveri kaveri12 = new Kaveri("Elena Cooke", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri8 = new Kaveri("Jane and Bill Helling", "301 N. Grace Ave.", "29669", "Crawfordsville", "SC", "USA");
+			Kaveri kaveri9 = new Kaveri("Juhani Dabek", "Mesenaatintie 4 B 11", "00350", "Helsinki", "SC", "USA");
+			Kaveri kaveri10 = new Kaveri("Kirsi Makkonen perheineen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri11 = new Kaveri("Manis Shakirova", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri12 = new Kaveri("Minna ja Mikko Minkkinen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri13 = new Kaveri("Sakari ja Leila Lukkarinen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri14 = new Kaveri("Minna ja Mikko Minkkinen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri15 = new Kaveri("Minna ja Mikko Minkkinen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri16 = new Kaveri("Minna ja Mikko Minkkinen", "110 Richey Road", "29669", "USA", "SC", "USA");
+			Kaveri kaveri17 = new Kaveri("Minna ja Mikko Minkkinen", "110 Richey Road", "29669", "USA", "SC", "USA");
 			
-			
+			/*
 			31	Amit Mehta	4311 Wilshire Blvd. # 401	90010	Los Angeles	CA	USA	POISTA
 			28	Anssi Hoikkanen	20 Rockley Court, Rockley Road	W14 0DB	London		United Kingdom	POISTA
 			26	Dennis Goodrich	309 Wellons Drive	50014	Ames	IA	USA	POISTA
@@ -63,7 +68,7 @@ public class KaveritietokantaApplication {
 			9	Simo ja Kaija Pihamaki	Korventie 281	05100	Roykka	Uusimaa	FINLAND	POISTA
 			29	Tammy ja Wayne Cooke	53275 Pineridge Drive	48051	Chesterfield	MI	USA	POISTA
 			6	Tuija Auvinen	Lehikuja 10	13720	Parola	Häme	FINLAND
-			
+			*/
 			
 			
 			repository.save(kaveri);
